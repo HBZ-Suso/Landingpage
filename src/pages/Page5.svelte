@@ -14,6 +14,16 @@
             behavior: 'smooth' 
         });
     }
+
+    function sendMail () {
+        let link = "mailto:moser@suso.konstanz.de"
+                + "&subject=Anliegen zum HBZ von " + encodeURIComponent(document.getElementById('nachrichtSender').value)
+                + "&body=" + encodeURIComponent(document.getElementById('nachrichtText').value)
+        ;
+        console.log(link)
+        window.location.href = link;
+    }
+
 </script>
 
 <div class="p-[30px] sm:p-0 relative w-full h-auto sm:h-[700px] bg-suso-light sm:flex-none flex flex-col-reverse ">
@@ -21,15 +31,15 @@
         <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
             E-Mail-Addresse
         </label>
-        <input class="shadow appearance-none borderbg-white rounded w-full py-2 px-3 text-gray-700 bg-white leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Ihre E-Mail-Addresse">
+        <input class="shadow appearance-none borderbg-white rounded w-full py-2 px-3 text-gray-700 bg-white leading-tight focus:outline-none focus:shadow-outline" id="nachrichtSender" type="text" placeholder="Ihr Name">
         
         
         <label class="block text-gray-700 text-sm font-bold mb-2 mt-8" for="username">
             Nachricht
         </label>
-        <textarea class="flex-grow shadow appearance-none borderbg-white rounded w-full py-2 px-3 text-gray-700 bg-white leading-tight focus:outline-none focus:shadow-outline resize-none" id="username" type="text" placeholder="Ihre Nachricht" />
+        <textarea id="nachrichtText" class="flex-grow shadow appearance-none borderbg-white rounded w-full py-2 px-3 text-gray-700 bg-white leading-tight focus:outline-none focus:shadow-outline resize-none" type="text" placeholder="Ihre Nachricht" />
     
-        <div class="bg-suso-dark w-full h-12 rounded shadow mt-8 cursor-pointer text-white text-center flex justify-center items-center"><p>Absenden</p></div>
+        <div on:click={sendMail} class="bg-suso-dark w-full h-12 rounded shadow mt-8 cursor-pointer text-white text-center flex justify-center items-center"><p>Absenden</p></div>
     
     
         <div class="w-full bg-[#777777] h-[2px] mt-8 mb-8"></div>

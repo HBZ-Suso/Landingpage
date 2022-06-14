@@ -7,6 +7,7 @@
     import Page4 from './pages/Page4.svelte';
     import Page5 from './pages/Page5.svelte';
     import Page6 from './pages/Page6.svelte';
+    import Footer from './pages/Footer.svelte';
 </script>
 <TailwindCss />
 
@@ -21,6 +22,7 @@
         <Page4 />
         <Page5 />
         <Page6 />
+        <Footer />
     </div>
 </main>
 

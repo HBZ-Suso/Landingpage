@@ -1,11 +1,11 @@
 <script>
     import { faqOptions } from "../faq.js";
-import FaqTopic from "./Components/FAQTopic.svelte";
+    import FaqTopic from "./Components/FAQTopic.svelte";
 
     let currentIndex = 0;
 </script>
 
-<div class="relative w-full overflow-hidden h-auto bg-suso-light">
+<div id="faqSection" class="relative w-full overflow-hidden h-auto bg-suso-light">
     {#each $faqOptions as faqOption, index}
         {#if faqOption[3].length > 0}    
             <FaqTopic index={index} />

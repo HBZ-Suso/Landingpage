@@ -46,7 +46,7 @@
         <img class="h-full w-full" src={wave} alt="">
     </div>
     <div class="absolute bottom-0 left-0 right-0 h-32 bg-suso-light">
-        <div class="absolute left-8 bottom-16 text-3xl sm:text-5xl text-white"> Hochbegabtenzug </div>
-        <div class="absolute left-8 bottom-8 text-lg sm:text-xl text-white italic font-light"> des Heinrich-Suso-Gymnasium Konstanz </div>
+        <div class="absolute left-4 sm:left-8 bottom-16 text-3xl sm:text-5xl text-white"> Hochbegabtenzug </div>
+        <div class="absolute left-4 sm:left-8 bottom-8 text-lg sm:text-xl text-white italic font-light"> des Heinrich-Suso-Gymnasium Konstanz </div>
     </div>
 </div>
