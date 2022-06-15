@@ -36,10 +36,10 @@
                     <img class="absolute top-0 left-0 h-full object-cover object-center w-[35%] bottom-0" src={page[0]} alt="" />
 
                     <div class="absolute top-0 left-[35%] right-0 bottom-0 flex flex-col justify-center p-8">
-                        <h2 class="text-black text-3xl text-left">{page[1]}</h2>
-                        <p class="text-black text-md text-left mt-8 italic">{page[2]}</p>
+                        <h2 class="ml-4 text-black text-3xl text-left">{page[1]}</h2>
+                        <p class="ml-4 text-black text-md text-left mt-8 italic">{page[2]}</p>
 
-                        <div class="self-center h-8 w-32 mt-8 flex flex-row justify-center items-center">
+                        <div class="absolute left-2 top-0 bottom-0 h-full w-8 mt-8 flex flex-col justify-center items-center">
                             {#each pages as page, index}
                                 {#if index === currentIndex}
                                     <div on:click={() => { currentIndex = index; }} class="cursor-pointer h-4 w-4 rounded-[1000px] bg-suso-dark m-1"></div>

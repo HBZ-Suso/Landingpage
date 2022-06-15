@@ -14,11 +14,7 @@
             "Heinrich-Suso-Gymnasium (offiziell)",
             [
                 ["Suso-Homepage", "https://suso.schulen.konstanz.de/HP"],
-                ["HBZ auf der Suso-Homepage", "https://www.suso.schulen.konstanz.de/HP/hbz"],
-                ["Kontakt", "https://www.suso.schulen.konstanz.de/HP/?option=com_content&view=article&id=9"],
-                ["Anfahrt", "https://www.suso.schulen.konstanz.de/HP/die-schule/wir-ueber-uns/anfahrt"],
-                ["Datenschutzerklärung", "https://www.suso.schulen.konstanz.de/HP/?option=com_content&view=article&id=479"],
-                ["Impressum", "https://www.suso.schulen.konstanz.de/HP/?option=com_content&view=article&id=8"]
+                ["HBZ auf der Suso-Homepage", "https://www.suso.schulen.konstanz.de/HP/hbz"]
             ]
         ]
     ]
@@ -36,4 +32,16 @@
             {/each}
         </div>
     {/each}
+</div>
+<div class="h-32 sm:h-16 bg-white text-suso-dark flex flex-col sm:flex-row sm:pl-6 sm:pr-6 pb-0 justify-between items-center">
+    <span class="flex flex-col sm:flex-row justify-start items-start w-full p-4 sm:p-0 sm:w-auto">
+        <a href={"https://www.suso.schulen.konstanz.de/HP/?option=com_content&view=article&id=9"} class="text-lg sm:text-sm p-[3px]">Kontakt</a>
+        <p class="hidden sm:block">|</p>
+        <a href={"https://www.suso.schulen.konstanz.de/HP/?option=com_content&view=article&id=8"} class="text-lg sm:text-sm p-[3px]">Impressum</a>
+        <p class="hidden sm:block">|</p>
+        <a href={"https://www.suso.schulen.konstanz.de/HP/?option=com_content&view=article&id=479"} class="text-lg sm:text-sm p-[3px]">Datenschutzerklärung</a>
+        <p class="hidden sm:block">|</p>
+        <a href={"https://www.suso.schulen.konstanz.de/HP/die-schule/wir-ueber-uns/anfahrt"} class="text-lg sm:text-sm p-[3px]">Anfahrt</a>
+    </span>
+    <a href={""} class="text-lg sm:text-sm p-[3px] justify-self-end">Webdesign durch Nathan Zumbusch</a>
 </div>
